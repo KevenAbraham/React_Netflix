@@ -17,7 +17,7 @@ export default {
             },
             {
                 slug: 'trending',
-                title: 'Reocmendados para Você',
+                title: 'Recomendados para Você',
                 items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
             },
             {

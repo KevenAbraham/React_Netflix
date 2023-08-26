@@ -3,7 +3,7 @@
 }
 
 .movieRow h2 {
-    margin: 0 0 0 30px;
+    margin-left: 30px;
 }
 
 .movieRow--listarea {
@@ -11,12 +11,12 @@
 }
 
 .movieRow--list {
-    width: 999999999px;
+    width: 999999px;
 }
 
 .movieRow--item {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -28,4 +28,10 @@
 
 .movieRow--item img:hover {
     transform: scale(1);
+}
+
+.movieRow--left, .movieRow--right {
+    position: absolute;
+    width: 40px;
+
 }
