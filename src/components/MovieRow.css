@@ -8,15 +8,17 @@
 
 .movieRow--listarea {
     overflow-x: hidden;
+    padding-left: 30px;
 }
 
 .movieRow--list {
     width: 999999px;
+    transition: all ease 0.5s;
 }
 
 .movieRow--item {
     display: inline-block;
-    width: 200px;
+    width: 150px;
     cursor: pointer;
 }
 
@@ -32,6 +34,27 @@
 
 .movieRow--left, .movieRow--right {
     position: absolute;
+    z-index: 151561;
     width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease .23s;
+}
 
+.movieRow--left {
+    left: 0;
+}
+
+.movieRow--right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;
 }
