@@ -61,6 +61,12 @@ export default () => {
         <p>Feito e desenvolvido por Keven Abraham de Souza | Insipirado em <a href="https://www.youtube.com/@bonieky">Bonieky Lacerda</a>.</p>
         <p className="direitor">&copy; Todos os direitos reservados.</p>
       </footer>
+
+      {movieList.length <= 0 && 
+        <div className="loading">
+          <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif" alt="Carregando" />
+        </div>
+      }
     </div>
   )
 }
