@@ -19,13 +19,13 @@
 .movieRow--item {
     display: inline-block;
     width: 150px;
-    cursor: pointer;
 }
 
 .movieRow--item img {
     width: 100%;
     transform: scale(0.9);
     transition: all ease 0.25s;
+    cursor: pointer;
 }
 
 .movieRow--item img:hover {
